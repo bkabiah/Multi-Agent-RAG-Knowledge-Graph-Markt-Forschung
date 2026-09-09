@@ -27,26 +27,30 @@ graph TD
     Manager -->|Prompt| LLM[Hugging Face LLM]
     LLM -->|Zusammenfassung| User
 ```
-🚀 Tech Stack
-Orchestrierung & State: Python, Pydantic (Strikte Typisierung & State-Management)
-Multi-Agenten: Custom Agent-Pipeline (Manager, Research, Graph)
-Datenbanken (Docker): Neo4j (Knowledge Graph), Qdrant (Vektor-Datenbank)
-Integration: Model Context Protocol (MCP) für standardisierte Tool-Aufrufe
-KI-Modelle: Hugging Face sentence-transformers (lokale Embeddings), Mistral-7B (LLM via Inference API)
-Testing & DevOps: Pytest, Docker Compose, Git
-⚙️ Installation & Setup
+## 🚀 Tech Stack
+
+- Orchestrierung & State: Python, Pydantic (Strikte Typisierung & State-Management)
+- Multi-Agenten: Custom Agent-Pipeline (Manager, Research, Graph)
+- Datenbanken (Docker): Neo4j (Knowledge Graph), Qdrant (Vektor-Datenbank)
+- Integration: Model Context Protocol (MCP) für standardisierte Tool-Aufrufe
+- KI-Modelle: Hugging Face sentence-transformers (lokale Embeddings), Mistral-7B (LLM via Inference API)
+- Testing & DevOps: Pytest, Docker Compose, Git
+- 
+## ⚙️ Installation & Setup
+
 1. Voraussetzungen
 Python 3.10+
 Docker & Docker Compose
 (Optional) Hugging Face API Token für LLM-Zusammenfassungen
-2. Umgebung aufsetzen
-# Repository klonen und betreten
+
+## Umgebung aufsetzen
+## Repository klonen und betreten
 git clone <dein-repo-link>
 cd ecommerce-market-researcher
 
-# Virtuelle Umgebung erstellen und aktivieren
+## Virtuelle Umgebung erstellen und aktivieren
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Abhängigkeiten installieren
+## Abhängigkeiten installieren
 pip install -r requirements.txt
