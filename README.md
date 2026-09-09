@@ -26,6 +26,7 @@ graph TD
     Graph -->|Graph Findings| Manager
     Manager -->|Prompt| LLM[Hugging Face LLM]
     LLM -->|Zusammenfassung| User
+```
 🚀 Tech Stack
 Orchestrierung & State: Python, Pydantic (Strikte Typisierung & State-Management)
 Multi-Agenten: Custom Agent-Pipeline (Manager, Research, Graph)
