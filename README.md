@@ -1,5 +1,5 @@
 
-# 🛒 E-Commerce Market Researcher (Multi-Agent RAG + Knowledge Graph)
+#  E-Commerce Market Researcher (Multi-Agent RAG + Knowledge Graph)
 In der schnelllebigen E-Commerce-Branche benötigen Marktberater fundierte, datengetriebene Analysen, um Wettbewerbsvorteile zu identifizieren und strategische Entscheidungen zu treffen. Dieses Projekt implementiert einen KI-gestützten Assistenten, der komplexe Marktrecherchen vollständig automatisiert durchführt, indem er spezialisierte AI-Agenten orchestriert. Das System kombiniert semantische Vektorsuche (RAG) für unstrukturierte Markttrends mit expliziten Unternehmensverknüpfungen aus einem Neo4j Knowledge Graph, um ein umfassendes Marktverständnis zu generieren. Ein Manager-Agent synthetisiert diese multimodalen Erkenntnisse zu prägnanten, handlungsorientierten Berater-Briefings.
 
 Das Projekt demonstriert moderne AI-Engineering-Praktiken für Enterprise-Umgebungen und zeigt nicht nur Prompting-Kenntnisse, sondern tiefes Verständnis für skalierbare Systemarchitekturen. Neben dem aufstrebenden Model Context Protocol (MCP) für standardisierte Tool-Integration setzt es auf strikte Typisierung via Pydantic für Data Validation, vollständige Containerisierung mit Docker und eine robuste Testabdeckung mit Pytest. Ziel ist es, wartbare, produktionsreife AI-Systeme zu bauen, die den Anforderungen Tech-Unternehmen gerecht werden.
@@ -8,7 +8,7 @@ Das Projekt demonstriert moderne AI-Engineering-Praktiken für Enterprise-Umgebu
 
 
 
-## 🏗️ Architektur
+##  Architektur
 
 ```mermaid
 graph TD
@@ -27,7 +27,7 @@ graph TD
     Manager -->|Prompt| LLM[Hugging Face LLM]
     LLM -->|Zusammenfassung| User
 ```
-## 🚀 Tech Stack
+##  Tech Stack
 
 - Orchestrierung & State: Python, Pydantic (Strikte Typisierung & State-Management)
 - Multi-Agenten: Custom Agent-Pipeline (Manager, Research, Graph)
@@ -36,7 +36,7 @@ graph TD
 - KI-Modelle: Hugging Face sentence-transformers (lokale Embeddings), Mistral-7B (LLM via Inference API)
 - Testing & DevOps: Pytest, Docker Compose, Git
  
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
  Voraussetzungen
    
@@ -46,11 +46,13 @@ graph TD
 
 ## Umgebung aufsetzen
 ### Repository klonen und betreten
-git clone <dein-repo-link>
+git clone <repo-link>
+
 cd ecommerce-market-researcher
 
 ### Virtuelle Umgebung erstellen und aktivieren
 python3 -m venv .venv
+
 source .venv/bin/activate
 
 ### Abhängigkeiten installieren
