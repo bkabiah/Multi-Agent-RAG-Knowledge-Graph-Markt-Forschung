@@ -42,18 +42,6 @@ graph TD
    
 - Python 3.10+
 - Docker & Docker Compose
-- (Optional) Hugging Face API Token für LLM-Zusammenfassungen
+- (Optional) Hugging Face API Token für LLM
 
-## Umgebung aufsetzen
-### Repository klonen und betreten
-git clone <repo-link>
 
-cd ecommerce-market-researcher
-
-### Virtuelle Umgebung erstellen und aktivieren
-python3 -m venv .venv
-
-source .venv/bin/activate
-
-### Abhängigkeiten installieren
-pip install -r requirements.txt
